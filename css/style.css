@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap');
+
+@font-face {
+    font-family: khmer;
+    src: url(../font/01-khmer.woff2);
+}
+
+html {
+    overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    color: brown;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    margin: auto;
+    max-width: 110vh;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url(../public/img/background/05-background.gif);
+    background-repeat: no-repeat;
+    background-color: rgb(9, 96, 99);
+}
+
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 110vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #9abfbf;
+    transition: opacity 0.75s, visibility 0.75s;
+}
+
+.loader--hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.loader::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    border: 25px solid #dddddd;
+    border-top-color: #0b5344;
+    border-bottom-color: #0b5344;
+    animation: loading 0.75s ease infinite;
+}
+
+@keyframes loading {
+    from {
+        transform: rotate(0turn);
+    }
+
+    to {
+        transform: rotate(5turn);
+    }
+}
+
+.thesrcity2realms {
+    margin: 10px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    border: double 20px cadetblue;
+    background-color: rgba(255, 255, 255, 0.901);
+}
+
+.thesrcity2realms .logo {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.thesrcity2realms .logo img {
+    max-width: 100%;
+}
+
+.thesrcity2realms h1 {
+    line-height: 1.9;
+    font-family: khmer;
+    font-size: 20px;
+    color: darkcyan;
+    text-align: center;
+}
+
+.thesrcity2realms span {
+    font-family: "Josefin Slab", serif;
+    font-weight: bold;
+    line-height: 1.9;
+    padding: 5px;
+    color: rgb(10, 119, 119);
+    text-align: center;
+    font-size: 20px;
+    border: double 20px cadetblue;
+}
+
+.thesrcity2realms .video-tthumbnail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-tthumbnail video {
+    margin: 10px;
+    border: double 20px cadetblue;
+}
+
+.thesrcity2realms .thumbnail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.thesrcity2realms .thumbnail span {
+    font-family: khmer;
+    line-height: 1.9;
+    padding: 5px;
+    color: rgb(10, 119, 119);
+    text-align: center;
+    font-size: 20px;
+    border: double 20px cadetblue;
+}
+
+.thesrcity2realms .thumbnail img {
+    margin: 5px;
+    max-width: 100%;
+    border: double 20px cadetblue;
+}
+
+.thesrcity2realms footer {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.thesrcity2realms footer p {
+    font-family: khmer;
+    padding: 5px;
+    color: rgb(10, 119, 119);
+    text-align: center;
+    font-size: 20px;
+    border: double 20px cadetblue;
+}
+
+.thesrcity2realms footer span {
+    font-family: "Josefin Slab", serif;
+    padding: 5px;
+    margin: 5px;
+    color: rgb(10, 119, 119);
+    text-align: center;
+    font-size: 20px;
+    border: double 20px cadetblue;
+}
